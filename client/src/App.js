@@ -54,13 +54,13 @@ function App() {
               />
               <Route
               // ask about the ? not working
-                path="/profile/:username"
+                path="/profile(/:username?)"
                 element={<Profile />}
               />
-              <Route
+              {/* <Route
                 path="/profile/"
                 element={<Profile />}
-              />
+              /> */}
               <Route
                 path="/thought/:id"
                 element={<SingleThought />}
